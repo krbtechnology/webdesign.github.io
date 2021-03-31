@@ -1,0 +1,517 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+title
+{
+    background-color:red;
+}
+h1
+{
+    margin: 300px;
+    font-size: xx-large;
+    
+}
+/*
+.navigation ul li a {
+    font-size: 2rem;
+  }
+  .navigation ul li a {
+    font-size: 2.2rem;
+    color: rgb(0, 153, 255);
+    text-decoration: rgb(177, 253, 0);
+    font-weight: 300;
+  }
+  
+  .navigation ul li a:hover {
+    color: var(--primary-color);
+  }
+  .navigation ul li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+  }
+  .navigation ul {
+    position: relative;
+  }
+  .navigation .social-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navigation .social-bar a {
+    display: inline-block;
+    transform: scale(0.5);
+  }
+  
+  .navigation .email-icon {
+    position: absolute;
+    bottom: 20px;
+    transform: scale(0.5);
+  }
+  /* TOGGLE */
+  /*
+.toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color) url(menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    cursor: pointer;
+  }
+  
+  .toggle.active {
+    background: var(--primary-color) url(menu.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }*/
+  .topnav {
+    background-color: rgb(250, 10, 10);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(255, 0, 0);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a .active {
+    background-color: #00ff08;
+    color: white;
+  }
+  
+  div.scrollmenu {
+    background-color: rgb(0, 153, 255);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: 700;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+
+
+  /* products jobs */
+.products {
+    display: flex; /* itha kudukalana line la pics uhh */
+    flex-wrap: wrap;/* itha kudukalana images horizontal line la varum */
+    justify-content:center;/* romba page left la varum */
+    margin-top: 50px; /*height level down akum from the images */
+  }
+  
+  .products p{
+    color: black;
+    position:relative;
+    margin: 100px;
+
+    
+  }
+  .products .item {
+    position: relative;
+    width: 400px;/*images oda width level of all the images */
+    height: 400px;/* item is mentioned for each images blocks*/
+    margin: 5px; /* margin level of the images blocks*/
+  }
+  
+  .products .item img {
+    width: 100%;    /* it is for the inner image*/
+    height: 100%;
+  }
+  
+  .products .item .action {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 191, 191, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .products .item:hover .action {
+    opacity: 12; /* Opacity  content behind an element is hidden,  opposite of transparency.*/
+  }
+  
+  .products .item .action a {
+    display: inline-block; 
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: xx-large;
+    border: 1px solid rgb(255, 251, 251);
+    border-width: thick;
+    padding: 5px 15px;
+  }
+  
+ /* services jobs */
+ *
+{
+    margin: 0;/* Full width of the page*/
+    padding: 0; /* Full width align of the page*/
+}
+.hero
+{
+    height: 100vh;
+    width: 100%;
+     color : white;
+     font-size: xx-large;
+     
+    background-color: rgb(43, 35, 40);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    overflow-x: hidden;
+    display: grid;
+} 
+ .highway
+ {
+     height: 200px;
+     width:500%;
+     display : block;
+     background-image: url(road.jpg);
+     position: absolute;
+     bottom: 0;
+     left:0;
+     right:0;
+     z-index: 1;
+     background-repeat: repeat-x;
+     animation: highway 5s linear infinite;
+
+
+ }
+ @keyframes highway
+ {
+     100%{
+         transform: translateX(-4400px);
+     }
+     }
+ }
+ .city
+ {
+     height: 250px;
+     width: 500%;
+     background-image:url(city.png);
+     position: absolute;
+     bottom: 200px;
+     left: 0;
+     right:0;
+     display:block;
+     z-index:1;
+    background-repeat: repeat-x; 
+animation: city 1s linear infinite;
+}
+@keyframes city
+{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+.car
+{
+    width:400px;
+    left:50%;
+    bottom:100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img
+{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car
+{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.wheel
+{
+    left: 50%;
+    bottom:178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index:2;
+}
+.wheel img{
+    width:72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+}
+.back-wheel
+{
+    left: -165px;
+    position: absolute;
+}
+.front-wheel
+{
+    left: 80px;
+    position: absolute;
+}
+@keyframes wheel{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+
+}
+/* Service */
+.hero ul li a {
+    font-size: 2rem;
+   
+  }
+  .hero ul li a {
+    font-size: 2.2rem;
+    color: rgb(0, 255, 13);
+    text-decoration: rgb(0, 0, 0);
+    font-weight: 300;
+    
+  }
+  
+  .hero ul li a:hover {
+    color: var(--primary-color);
+  }
+  .hero ul li {
+    position: relative;
+    list-style: none;
+    text-align: left;
+    margin: unset;
+    font-style: unset;
+    padding: 1px;
+    
+  }
+  .hero ul {
+    position: relative;
+  }
+  p{
+      font-size: large;
+      color: rgb(0, 64, 255);
+      margin: 55px;
+      background-color: rgb(255, 255, 255);
+      display: block;
+      justify-content: center;
+      font-weight: 1000;
+      
+  }
+
+  /* CONTACT */
+.contact {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contact-form {
+    position: relative;
+    background: #f9f9f9;
+    width: calc(100% - 400px);
+    padding: 60px 40px 20px;
+  }
+  
+  .contact-form form {
+    width: 100%;
+  }
+  
+  .contact-form .row {
+    width: 100%;
+    display: flex;
+  }
+  
+  .contact-form .input50 {
+    width: 50%;
+    margin: 0 10px;
+  }
+  
+  .contact-form .input100 {
+    width: 100%;
+    margin: 0 10px;
+  }
+  
+  .contact-form .row input,
+  .contact-form .row textarea {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #111;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    resize: none;
+  }
+  
+  .contact-form .row textarea {
+    height: 150px; /* message box size*/
+  }
+  
+  .contact-form .row input[type='submit'] {
+    background-color:rgb(0, 132, 255);
+    color: rgb(0, 0, 0);
+    
+    
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: x-large;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    width: 350px;
+    background: #f9f9f9;
+    padding: 60px 40px 20px;
+  }
+  
+  .contact-info .info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info .info-box .contact-icon {
+    width: 30px;
+    margin-right: 30px;
+  }
+  
+  .contact-info .info-box .details h4 {
+    color: var(--secondary-color);
+  }
+  
+  .contact-info .info-box .details p,
+  .contact-info .info-box .details a {
+    color: rgb(0, 0, 0);
+  }
+  
+  @media (max-width: 1068px) {
+    .home-img {
+      display: none;
+    }
+  
+    .logo {
+      top: 10px;
+      left: 40px;
+      font-size: 1.5rem;
+    }
+  
+    section {
+      padding: 100px 40px;
+    }
+  
+    .navigation ul li a {
+      font-size: 2rem;
+    }
+  
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .contact {
+      flex-direction: column;
+    }
+  
+    .contact-form {
+      width: 100%;
+      padding: 30px 30px 20px;
+    }
+  
+    .contact-form .row {
+      flex-direction: column;
+    }
+  
+    .contact-form .input50,
+    .contact-form .input100 {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .contact-info {
+      width: 100%;
+      margin-top: 20px;
+      padding: 30px 30px 20px;
+    }
+  }
+  /*
+  @media (max-width: 768px) {
+    .services {
+      grid-template-columns: 1fr;
+    }
+  
+    .services .service {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+  */
+  .contact-info .info-box .details  p
+  {
+    font-size: larger;
+    margin: 25px;
+    justify-content: center;
+    display: block;
+  }
+  h4
+  {
+    font-size: x-large;
+    
+  }
+  h2{
+    margin: 50px;
+    justify-content: flex-end;
+    font-size: xx-large;
+    background-color: rgb(241, 201, 172);
+    font-style: normal;
+  }
